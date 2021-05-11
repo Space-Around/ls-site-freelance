@@ -40,10 +40,7 @@ class Wotermark {
         imagepng($im, dirname(__FILE__)."\\result.png");
         imagedestroy($im);
 
-        $data = file_get_contents(dirname(__FILE__)."\\result.png");
-        $base64 = base64_encode($data);
-
-        return $base64;
+        return "success";
     } 
 }
 
