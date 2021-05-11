@@ -9,4 +9,5 @@
         </div>
     </div>
     <a href="./feedback.php">Обратная связь</a>
+    <a href="./whatermark.php">Водный знак</a>
 </div>

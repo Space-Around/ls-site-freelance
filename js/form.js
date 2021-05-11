@@ -4,12 +4,11 @@ form.onsubmit = (event) => {
 
   event.preventDefault();
 
-  // var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  // var address = form.target.elements.email.value;
-  // if (reg.test(address) == false) {
-  //   alert("Введите корректный e-mail");
-  // } else {
-  //   alert("ФОРМА ОТПРАВЛЕНА!");
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var address = form.target.elements.email.value;
+  if (reg.test(address) == false) {
+    alert("Введите корректный e-mail");
+  } else {
 
     let name = document.querySelector("#fname").value;
     let surname = document.querySelector("#lname").value;
@@ -17,11 +16,6 @@ form.onsubmit = (event) => {
     let country = document.querySelector("#country").value;
     let message = document.querySelector("#message").value;
     
-    console.log("name: " + name);
-    console.log("surname: " + surname);
-    console.log("email: " + email);
-    console.log("country: " + country);
-    console.log("message: " + message);
 
     let param = 'name=' + name + "&surname=" + surname + "&email=" + email + "&country=" + country + "&message=" + message;
     
@@ -56,8 +50,8 @@ form.onsubmit = (event) => {
             
         }
     });
+    alert("ФОРМА ОТПРАВЛЕНА!");
 
-
-  // }
+  }
   return false;
 };
