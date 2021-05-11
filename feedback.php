@@ -47,7 +47,7 @@
               <option value="usa">USA</option>
             </select>
 
-            <label for="subject">Письмо</label>
+            <label id="message" for="subject">Письмо</label>
             <textarea
               id="subject"
               name="subject"
@@ -61,6 +61,7 @@
       </div>
       <?php include('footer.php'); ?>    
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/form.js"></script>
     <script src="js/dropdown.js"></script>
   </body>
