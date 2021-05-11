@@ -1,4 +1,4 @@
-document.getElementById('download').style.display = "none";
+// document.getElementById('download').style.display = "none";
 
 document.querySelector("#send").onclick = () => {
     let inputImage = document.querySelector("#image");
@@ -16,8 +16,8 @@ document.querySelector("#send").onclick = () => {
         type: 'POST',
         success: function (data) {
             const imgB64 = data;
-            document.getElementById('download').style.display = "block";
-            document.getElementById('download').href = `data:image/png;base64,${imgB64}`;
+            // document.getElementById('download').style.display = "block";
+            document.getElementById('downloadlink').href = `data:image/png;base64,${imgB64}`;
         }
     });
 }

@@ -20,7 +20,7 @@
             <label for="image">Водный знак</label>    
             <input id="watermark" accept="image/jpeg, image/jpg" type="file" атрибуты>
             <button id="send">Overlaying</button>
-            <a id="download" href="#" download="image.png">Download</a>
+            <a id="downloadlink" href="#" download="image.png">Download</a>
         </section>
       </div>
       <?php include('footer.php'); ?>    
