@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100vh;
+}
+
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fed049;
+  min-height: 100px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: -100%;
+  background: url("../assets/images/background.jpg") center center no-repeat;
+}
+
+.header .wrapper {
+  width: 350px;
+}
+
+.disco {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  background: #000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.disco .disco_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a70000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.dot {
+  background: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+}
+
+.title {
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation .text {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navigation .disco {
+  width: 75px;
+  height: 75px;
+}
+
+.navigation .disco_inner {
+  width: 25px;
+  height: 25px;
+}
+
+.about {
+  background: #282846;
+}
+.about .disco_inner {
+  background: #007580;
+}
+.main {
+  background: #feffde;
+}
+.main .disco_inner {
+  background: #52734d;
+}
+.actors {
+  background: #e4bad4;
+}
+.actors .disco_inner {
+  background: #caf7e3;
+}
+.tracks {
+  background: #f8f5f1;
+}
+.tracks .disco_inner {
+  background: #e9896a;
+}
+.feedback {
+  background: #4287f5;
+}
+.feedback .disco_inner {
+  background: #f542ce;
+}
+
+.description {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.head {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.item {
+  list-style-type: none;
+}
+
+.item a {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32px;
+  min-height: 50px;
+  width: 100%;
+  background: #343f56;
+}
